@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
-    "build-storybook": "npm run docs:json && build-storybook"
+    "build-storybook": "npm run docs:json && build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +23,7 @@
     "@angular/platform-browser": "~11.2.7",
     "@angular/platform-browser-dynamic": "~11.2.7",
     "@angular/router": "~11.2.7",
+    "@storybook/storybook-deployer": "^2.8.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
